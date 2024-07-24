@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .options {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .option {
+            margin: 0 20px;
+            padding: 10px 10px;
+            background-color: rgb(0, 123, 255);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 2px solid black;
+            
+            
+        }
+
+        .option:hover {
+
+            background-color:#9bb0fa;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Employee Management System</h1>
+        <div class="options">
+            <button class="option" onclick="location.href='Add_Employee.jsp'"><h2>Add Employee</h2></button>
+            <form action="showAllEmployee">
+     <button class="option"><h2>Show All Employees</h2></button>
+            </form>
+           <button class="option" onclick="location.href='Showemployeebyid.jsp'"><h2>Show Employee by ID</h2></button>
+            <button class="option" onclick="location.href='DeleteEmployeeById.jsp'"><h2>Delete Employee by ID</h2></button>
+        </div>
+    </div>
+    
+</body>
+</html>
